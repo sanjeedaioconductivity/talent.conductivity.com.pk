@@ -48,7 +48,9 @@ body { @apply bg-white text-ink antialiased; }
   .btn-sanj { @apply btn bg-sanj-dark text-white hover:bg-sanj-deep focus-visible:outline-sanj; }
   .card { @apply rounded-2xl bg-white p-6 shadow-card ring-1 ring-ink/5; }
   .eyebrow { @apply text-xs font-semibold uppercase tracking-[0.18em] text-spark-dark; }
-  .input { @apply w-full rounded-lg border border-ink/15 bg-white px-3.5 py-2.5 text-sm outline-none focus:border-spark focus:ring-2 focus:ring-spark/30; }
+  .input { @apply w-full rounded-lg border border-ink/15 bg-white px-3.5 py-2.5 text-sm text-ink caret-ink outline-none placeholder:text-ink-mute focus:border-spark focus:ring-2 focus:ring-spark/30; }
+  /* Fields sit inside white-text panels (e.g. the red contact form), so set their text and option colours explicitly. */
+  .input option { @apply bg-white text-ink; }
 }
 
 /* Services ring: tiles sweep in from the centre one after another. */

@@ -70,7 +70,7 @@ export default function SiteSearch({ compact = false }: { compact?: boolean }) {
               <input ref={input} value={q} onChange={(e) => setQ(e.target.value)} onKeyDown={onInputKey}
                 placeholder="Search services, careers, articles…" aria-label="Search" role="combobox"
                 aria-expanded={results.length > 0} aria-controls="search-results" aria-activedescendant={results[active] ? `sr-${active}` : undefined}
-                className="h-14 w-full bg-transparent text-base outline-none placeholder:text-ink-mute" />
+                className="h-14 w-full bg-transparent text-base text-ink outline-none placeholder:text-ink-mute" />
               <button type="button" onClick={close} aria-label="Close search" className="rounded-lg p-1.5 text-ink-mute hover:bg-paper"><X size={18} /></button>
             </div>
 
